@@ -35,7 +35,7 @@ const showModal = (data) => {
           </div>
           <div>
               <form method="dialog">
-                  <button class="btn bg-violet-700 text-white rounded-md">Complete Learning</button>
+                  <button class="btn bg-sky-500 text-white rounded-md">Complete Learning</button>
               </form>
           </div>
       </div>
@@ -80,7 +80,7 @@ const showModal2 = (data) => {
           </div>
           <div>
               <form method="dialog">
-                  <button class="btn bg-violet-700 text-white rounded-md">Complete Learning</button>
+                  <button class="btn bg-sky-500 text-white rounded-md">Complete Learning</button>
               </form>
           </div>
       </div>
@@ -125,7 +125,7 @@ const showModal3 = (data) => {
           </div>
           <div>
               <form method="dialog">
-                  <button class="btn bg-violet-700 text-white rounded-md">Complete Learning</button>
+                  <button class="btn bg-sky-500 text-white rounded-md">Complete Learning</button>
               </form>
           </div>
       </div>
@@ -172,7 +172,7 @@ const showModal5 = (data) => {
           </div>
           <div>
               <form method="dialog">
-                  <button class="btn bg-violet-700 text-white rounded-md">Complete Learning</button>
+                  <button class="btn bg-sky-500 text-white rounded-md">Complete Learning</button>
               </form>
           </div>
       </div>
@@ -219,7 +219,7 @@ const showModal6 = (data) => {
           </div>
           <div>
               <form method="dialog">
-                  <button class="btn bg-violet-700 text-white rounded-md">Complete Learning</button>
+                  <button class="btn bg-sky-500 text-white rounded-md">Complete Learning</button>
               </form>
           </div>
       </div>
