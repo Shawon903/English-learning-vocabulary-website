@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/27a2547aa6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="w-10/12 mx-auto">
+  <header>
+    <nav id="navbar" class="hidden ">
+      <div class="navbar shadow-sm fixed top-0 left-0 w-full z-50 bg-white">
+        <div class="flex-1 flex items-center">
+          <div class="font-bold text-xl">English</div>
+          <div><img src="B11-A6-English-Janala-main/assets/logo.png" alt=""></div>
+          <div class="font-bold">জানালা</div>
+        </div>
+        <div class="flex gap-5">
+          <button class="border border-sky-500 px-4 py-1 rounded-md hover:bg-sky-500 group">
+            <div class="flex items-center gap-1">
+              <div>
+                <i class="fa-solid fa-circle-question text-sm text-sky-500 group-hover:text-white"></i>
+              </div>
+              <div id="faq" class="text-sm font-bold text-sky-500 group-hover:text-white">FAQ</div>
+            </div>
+          </button>
+          <button class="border border-sky-500 px-4 py-1 rounded-md hover:bg-sky-500 group">
+            <div class="flex items-center gap-1">
+              <div>
+                <i class="fa-solid fa-book-open text-sm text-sky-500 group-hover:text-white"></i>
+              </div>
+              <div id="learn" class="text-sm font-bold text-sky-500 group-hover:text-white">Learn</div>
+            </div>
+          </button>
+          <button class="border border-sky-500 px-4 py-1 rounded-md hover:bg-sky-500 group">
+            <div class="flex items-center gap-1">
+              <div>
+                <i
+                  class="fa-solid fa-arrow-right-from-bracket text-sm font-bold text-sky-500 group-hover:text-white"></i>
+              </div>
+              <div id="log-out" class="text-sm font-bold text-sky-500 group-hover:text-white">Log Out</div>
+            </div>
+          </button>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- Banner Section -->
+    <div id="english-banner" class="grid grid-cols-1 gr items-center lg:grid-cols-2 mt-20">
+      <div>
+        <h1 class="lg:text-5xl text-3xl font-bold mb-5"><span class="text-sky-500">English</span> is Easy</h1>
+        <p class="font-semibold text-gray-700 mb-5">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। <br> আপনি যদি নতুন হন
+          অথবা আপনার দক্ষতা বাড়াতে চান, <br> আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+        <div class="">
+          <form class=>
+            <input value="Mohammad Shawon" id="account-text" type="text" class="input mb-5" placeholder="Type your name"
+              required />
+            <br>
+            <input value="123456" id="pin" type="password" class="input mb-5" placeholder="Type your PIN" required />
+          </form>
+          <button id="login-btn" class="btn bg-sky-500 text-white rounded-md">Get Started</button>
+        </div>
+      </div>
+      <!-- hero image -->
+      <div>
+        <img src="B11-A6-English-Janala-main/assets/hero-student.png" alt="">
+      </div>
+    </div>
+    
+  </header>
+  
+  <main id="main-section" class="mt-30 hidden">
+    <section id="learn-container">
+      <!-- Let's Learn Vocabularies section -->
+      
+      <section class="mb-10">
+        <h1 class="text-center text-3xl lg:text-5xl mb-6 lg:mb-10 font-bold"><span class="text-sky-500">Let's</span>
+          Learn Vocabularies</h1>
+        <!-- Dynnamic lesson button -->
+        <div id="lesson-container" class="flex gap-4 py-5 justify-center">
+        </div>
+
+        
+      
+       
+        <div id="indicate-lesson" class="p-10 bg-zinc-100 my-10">
+          <h4 class="text-center text-md font-bold text-gray-600 mb-5">আপনি কোনো lesson select করেন নি</h4>
+          <h1 class="text-center font-bold text-3xl">একটি lesson select করুন</h1>
+        </div>
+      </section>
+      
+      <!-- Lesson btn-1 Container -->
+      <section id="word-container-1" class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-20">
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_1" class="modal">
+          
+        </dialog>
+      </section>
+
+      <!-- Lesson btn-2 Container -->
+      <section id="word-container-2" class=" grid grid-cols-1 lg:grid-cols-3 gap-4 mb-20">
+        <dialog id="my_modal_2" class="modal">
+          
+        </dialog>
+      </section>
+      <!-- Lesson btn-3 Container -->
+      <section id="word-container-3" class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-20">
+        <dialog id="my_modal_3" class="modal">
+          
+        </dialog>
+      </section>
+      <!-- Lesson btn-4 Container -->
+      <section id="word-container-4" class=" mb-20">
+        <div class="flex flex-col justify-center items-center bg-zinc-100 p-10">
+          <div><img src="B11-A6-English-Janala-main/assets/alert-error.png" alt=""></div>
+          <div>
+            <p class="text-gray-500 font-semibold py-5 text-center">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <h1 class="font-bold text-3xl text-center text-gray-800">নেক্সট Lesson এ যান</h1>
+          </div>
+        </div>
+      </section>
+      <!-- Lesson btn-5 Container -->
+      <section id="word-container-5" class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-20">
+        <dialog id="my_modal_5" class="modal">
+          
+        </dialog>
+      </section>
+      <!-- Lesson btn-6 Container -->
+      <section id="word-container-6" class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-20">
+        <dialog id="my_modal_6" class="modal">
+          
+        </dialog>
+      </section>
+      <!-- Lesson btn-7 Container -->
+      <section id="word-container-7" class="mb-20">
+
+        <div class="flex flex-col justify-center items-center bg-zinc-100 p-10">
+          <div><img src="B11-A6-English-Janala-main/assets/alert-error.png" alt=""></div>
+          <div>
+            <p class="text-gray-500 font-semibold py-5 text-center">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <h1 class="font-bold text-3xl text-center text-gray-800">নেক্সট Lesson এ যান</h1>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Modal -->
+    <!-- Open the modal using ID.showModal() method -->
+   
+
+    <!-- Frequently Ask Section -->
+    <section id="fq-ask">
+      <div>
+        <h1 class="text-center text-3xl lg:text-5xl mb-6 lg:mb-10 font-bold"><span
+            class="text-sky-500">Frequently</span> Asked Questions</h1>
+      </div>
+      <div>
+        <div class="collapse collapse-plus bg-[rgb(248,248,248)]  border-base-300 mb-5">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-semibold">1.How can I start learning English on this website?</div>
+          <div class="collapse-content text-sm text-gray-600 font-medium">Your first step is learn vocabulary, synonyms
+            and antonyms.</div>
+        </div>
+        <div class="collapse collapse-plus bg-[rgb(248,248,248)]  border-base-300 mb-5">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">2.Is this website free to use?</div>
+          <div class="collapse-content text-sm text-gray-600 font-medium">Yes anyone can use it</div>
+        </div>
+        <div class="collapse collapse-plus bg-[rgb(248,248,248)]  border-base-300 mb-5">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">3. Do I need to create an account?</div>
+          <div class="collapse-content text-sm text-gray-600 font-medium">Yes it's compulsory</div>
+        </div>
+        <div class="collapse collapse-plus bg-[rgb(248,248,248)]  border-base-300 mb-5">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">4. How can I build my English vocabulary?</div>
+          <div class="collapse-content text-sm text-gray-600 font-medium">Need more and more practice.</div>
+        </div>
+        <div class="collapse collapse-plus bg-[rgb(248,248,248)] border-base-300">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-semibold">5. Do you offer certificates for completed courses?</div>
+          <div class="collapse-content text-sm text-gray-600 font-medium">Yes of course.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="my-20">
+    <div class="flex items-end justify-between">
+      <div>
+        <div class="flex-1 flex items-center mb-5">
+          <div class="font-bold text-xl">English</div>
+          <div><img src="B11-A6-English-Janala-main/assets/logo.png" alt=""></div>
+          <div class="font-bold">জানালা</div>
+        </div>
+        <p class="font-bold mb-2">ইংরেজি শিখুন সহজে</p>
+        <span>Providing ED-Tech Applications since 2025</span>
+      </div>
+      <!-- right side -->
+      <div>
+        <div>
+          <p class="mb-2 font-medium">Follow us</p>
+        </div>
+        <div class="flex items-center gap-5">
+          <div><img src="B11-A6-English-Janala-main/assets/youtube-thumb.png" alt=""></div>
+          <div><img src="B11-A6-English-Janala-main/assets/fb-thumb.png" alt=""></div>
+          <div><img src="B11-A6-English-Janala-main/assets/github-thumb.png" alt=""></div>
+          <div><img src="B11-A6-English-Janala-main/assets/instagram-thumb.png" alt=""></div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="modal.js"></script>
+  <script src="word.js"></script>
+  <script src="app.js"></script>
+  <script src="toggle.js"></script>
+</body>
+
+</html>
